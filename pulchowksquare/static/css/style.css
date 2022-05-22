@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: RohaOne;
+  background: #faf6f2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: RohaOne;
+  src: url("../fonts/RozhaOne-Regular.ttf");
+}
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-top-big {
+  margin-top: 4rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.doorhanger {
+  background-color: #e0d9d0;
+  height: 80vh;
+  width: 25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 25rem 25rem 0px 0px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+}
+.doorhanger:after, .doorhanger:before {
+  content: "";
+  position: absolute;
+  background-color: #faf6f2;
+  z-index: 1;
+}
+.doorhanger:after {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) inset, 0 3px 6px rgba(0, 0, 0, 0.23) inset;
+}
+.doorhanger h1 {
+  color: #6b5c49;
+  position: relative;
+  top: 50%;
+  font-size: 5rem;
+  line-height: 4rem;
+}
+.doorhanger img {
+  position: relative;
+  top: 42rem;
+  width: auto;
+  height: 10rem;
+  animation: 2s fadein ease-in-out;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.dd {
+  position: absolute;
+  z-index: 0;
+  width: 10rem;
+  height: 10rem;
+  rotate: 45deg;
+  overflow: hidden;
+  padding: 2rem;
+  left: -6rem;
+  top: 45rem;
+  background-color: #6b5c49;
+}
+
+.smallbb {
+  position: absolute;
+  z-index: 0;
+  width: 3em;
+  height: 3rem;
+  rotate: 45deg;
+  overflow: hidden;
+  left: 19rem;
+  top: 25.5rem;
+  border: 1px solid #e17d73;
+  animation: rotate 10s linear infinite;
+}
+
+.bb {
+  position: absolute;
+  z-index: 0;
+  width: 10rem;
+  height: 10rem;
+  rotate: 45deg;
+  overflow: hidden;
+  padding: 2rem;
+  left: 20rem;
+  top: 20rem;
+}
+.bb::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #e17d73;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#e17d73, #e17d73), linear-gradient(#e0d9d0, #e0d9d0), linear-gradient(#e17d73, #e17d73), linear-gradient(#e0d9d0, #e0d9d0);
+  animation: rotate 7s linear infinite;
+}
+.bb::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: #e0d9d0;
+}
+
+/*# sourceMappingURL=style.css.map */
