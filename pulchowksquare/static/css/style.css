@@ -11,7 +11,21 @@ html {
 body {
   box-sizing: border-box;
   font-family: RohaOne;
-  background: #faf6f2;
+  background-image: linear-gradient(to right, rgba(250, 246, 242, 0.8), rgba(224, 217, 208, 0.8)), url(../img/20220325_115113.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: contain;
+  background-size: 100%;
+}
+@media only screen and (max-width: 75em) {
+  body {
+    background-image: linear-gradient(to right, rgba(250, 246, 242, 0.8), rgba(224, 217, 208, 0.8)), url(../img/verticalimg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+  }
 }
 
 a {
@@ -44,7 +58,7 @@ a {
 }
 
 .doorhanger {
-  background-color: #e0d9d0;
+  background-image: radial-gradient(circle 10rem at 50% 19%, rgba(255, 255, 0, 0) 5.9rem, #e0d9d0 0);
   height: 80vh;
   width: 25rem;
   position: absolute;
@@ -59,7 +73,8 @@ a {
 .doorhanger:after, .doorhanger:before {
   content: "";
   position: absolute;
-  background-color: #faf6f2;
+  background-color: rgba(0, 0, 0, 0);
+  clip-path: circle(50% at 50% 50%);
   z-index: 1;
 }
 .doorhanger:after {

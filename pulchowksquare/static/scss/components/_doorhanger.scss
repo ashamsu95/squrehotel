@@ -1,5 +1,9 @@
 .doorhanger {
-  background-color: $color-secondary;
+  background-image: radial-gradient(
+    circle 10rem at 50% 19%,
+    rgba(255, 255, 0, 0) 5.9rem,
+    #e0d9d0 0
+  );
   height: 80vh;
   width: 25rem;
   position: absolute;
@@ -15,7 +19,8 @@
   &:before {
     content: "";
     position: absolute;
-    background-color: $color-primary;
+    background-color: rgba(0, 0, 0, 0);
+    clip-path: circle(50% at 50% 50%);
     z-index: 1;
   }
 

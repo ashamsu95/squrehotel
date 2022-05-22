@@ -11,7 +11,30 @@ html {
 body {
   box-sizing: border-box;
   font-family: RohaOne;
-  background: $color-primary;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(250, 246, 242, 0.8),
+      rgba(224, 217, 208, 0.8)
+    ),
+    url(../img/20220325_115113.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: contain;
+  background-size: 100%;
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        to right,
+        rgba(250, 246, 242, 0.8),
+        rgba(224, 217, 208, 0.8)
+      ),
+      url(../img/verticalimg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+  }
 }
 a {
   text-decoration: none;
